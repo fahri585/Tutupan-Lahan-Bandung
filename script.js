@@ -79,7 +79,7 @@ case 'Sawah': return {fillColor:"#01FBBB", fillOpacity: 0.8, weight:
 
 0.5, color: "#4065EB"};
 
-case 'Semak Belukar': return {fillColor:"#FDFDFD", fillOpacity: 0.8,
+case 'Semak Belukar': return {fillColor:"#389118", fillOpacity: 0.8,
 
 weight: 0.5, color: "#00A52F"};
 
@@ -87,7 +87,7 @@ case 'Sungai': return {fillColor:"#97DBF2", fillOpacity: 0.8, weight:
 
 0.5, color: "#4065EB"};
 
-case 'Tanah Kosong/Gundul': return {fillColor:"#FDFDFD", fillOpacity: 0.8,
+case 'Tanah Kosong/Gundul': return {fillColor:"#c19b03", fillOpacity: 0.8,
 
 weight: 0.5, color: "#000000"};
 
