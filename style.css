@@ -1,0 +1,271 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background: linear-gradient(to bottom right, #f0f8ff, #e6f7ff);
+}
+header {
+  background: linear-gradient(90deg, #056fe8, #10feef);
+  padding: 20px 1px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 100vw;
+  margin: 0 auto;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  height: 70px;
+  overflow-x: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+header.hide {
+  transform: translateY(-100%);
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  max-width: 300px;
+}
+
+header .logo img {
+  height: 60px;
+  margin-right: 15px;
+  background: transparent;
+  border-radius: 8px;
+  padding: 5px;
+  box-shadow: none;
+}
+
+header .logo h1 {
+  font-size: 20px;
+  margin: 0;
+  white-space: nowrap;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  max-width: none;
+  overflow-x: visible;
+  margin-left: -10px;
+}
+
+nav ul li {
+  margin: 0 2px;
+  white-space: nowrap;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.3s;
+  padding: 5px 8px;
+  display: inline-block;
+}
+
+nav ul li a:hover {
+  color: #ffd700;
+}
+
+.hero-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 70px;
+}
+
+video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.intro {
+  position: relative;
+  z-index: 3;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+}
+
+h1, h2, h3 {
+  margin: 10px 0;
+}
+
+#map-section {
+  padding: 50px 20px;
+  text-align: center;
+  background: #f1f8ff;
+  position: relative;
+}
+
+#map {
+  height: 500px;
+  background: #ccc;
+  margin: 20px auto;
+  width: 90%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+#map-buttons {
+  position: absolute;
+  bottom: 50px;
+  left: 10px;
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#map-buttons button {
+  background-color: #adcff1;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  transition: background-color 0.3s;
+}
+
+#map-buttons button:hover {
+  background-color: #005bb5;
+}
+
+#data-section {
+  padding: 70px 20px;
+  text-align: center;
+  background: #ffffff;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.column {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+  padding: 20px;
+  flex: 1 1 300px;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.column:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+}
+
+.data-icon img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#author-section, #footer {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#footer {
+  background: linear-gradient(90deg, #007cf0, #00dfd8);
+  color: white;
+  padding-left: 5px;
+  padding-right: 5px;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #007cf0;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 22px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+#backToTop:hover {
+  background: #005bb5;
+}
+
+.legend {
+  padding: 6px 8px;
+  background-color: rgba(255,255,255,0.8);
+  
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  }
+  .legend div {
+  width: 30px;
+  height: 15px;
+  float: left;
+  margin-right: 8px;
+  opacity: 0.7;
+  }
+  div.legend.leaflet-control br {
+  clear: both;
+  }
