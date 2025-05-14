@@ -197,4 +197,5 @@ const Component = {
   "Penggunaan Lahan": landcover
 };
 
-L.control.layers(baseMaps, Component).addTo(map);
+/* Removed duplicate basemaps control to avoid double buttons */
+ // L.control.layers(baseMaps, Component).addTo(map);
